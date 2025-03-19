@@ -54,23 +54,39 @@ const EducationItem = ({
 const Education = () => {
     const Educations = [
         {
-            title: "Master I : Software Engineering & Machine Learning",
+            title: "Master I: Software Engineering & Machine Learning",
             company: "IT University",
             period: "Jan 2025 - Present",
             description:
-                "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-            technologies: ["Machine Learning", "Advanced Web","Enterprise Database", "Project Management"],
+                "Focused on advanced software engineering principles and machine learning techniques. Developed expertise in distributed computing, cybersecurity, and modern web technologies. Worked on real-world AI applications, optimizing data-driven solutions, and implementing scalable architectures.",
+            technologies: [
+                "Machine Learning",
+                "Advanced Web (MEAN Stack)",
+                "Distributed Computing & Web Services",
+                "Cybersecurity",
+                "Operational Research",
+                "Constraint Programming",
+                "Software Architecture",
+            ],
         },
         {
-            title: "Licence in Information of Technology",
+            title: "Bachelor's in Information Technology",
             company: "IT University",
             period: "Oct 2021 - Nov 2024",
             description:
-                "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-            technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Java"],
+                "Built a strong foundation in computer science, covering software development, database systems, networking, and applied mathematics. Gained hands-on experience in full-stack development, algorithm optimization, and cloud computing.",
+            technologies: [
+                "Object-Oriented Programming",
+                "System Programming",
+                "Network Security",
+                "Data Warehousing & Data Mining",
+                "Software Architecture",
+                "React Native",
+                "Algorithm & Optimization",
+            ],
         },
-
     ];
+
 
     return (
         <section id="education" className="relative py-20 px-6">
