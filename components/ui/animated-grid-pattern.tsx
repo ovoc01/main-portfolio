@@ -33,7 +33,7 @@ export default function AnimatedGridPattern({
   const id = useId();
   const containerRef = useRef(null);
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const [squares, setSquares] = useState(() => generateSquares(numSquares));
+  const [squares, setSquares] = useState(() => generateSquares(numSquares!));
 
   function getPos() {
     return [
@@ -67,7 +67,7 @@ export default function AnimatedGridPattern({
   // Update squares to animate in
   useEffect(() => {
     if (dimensions.width && dimensions.height) {
-      setSquares(generateSquares(numSquares));
+      setSquares(generateSquares(numSquares!));
     }
   }, [dimensions, numSquares]);
 

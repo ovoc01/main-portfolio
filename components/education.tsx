@@ -89,7 +89,7 @@ const Education = () => {
 
                 <div className="relative">
                     {Educations.map((Education, index) => (
-                        <EducationItem  {...Education} />
+                        <EducationItem key={index} {...Education} />
                     ))}
                 </div>
             </div>
