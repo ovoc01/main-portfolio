@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { CircleArrowDown, Zap } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -32,9 +33,12 @@ const Hero = () => {
           together! 🚀
         </p>
         <div className="mt-12 flex items-center justify-center gap-4">
-          <Button size="lg" className="rounded-full text-base">
-            See What I Do <CircleArrowDown className="ml-2 !h-5.5 !w-5.5" />
-          </Button>
+          <Link href="#about">
+            <Button size="lg" className="rounded-full text-base">
+              See What I Do <CircleArrowDown className="ml-2 !h-5.5 !w-5.5" />
+            </Button>
+          </Link>
+
         </div>
       </div>
     </div>
