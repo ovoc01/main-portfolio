@@ -83,42 +83,38 @@ const Projects = () => {
         "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
       image: "/placeholder.svg",
       technologies: ["Next.js", "TypeScript", "Python", "spaCy","Panda", "PostgreSQL"],
-      liveUrl: "https://ecommerce-demo.com",
-      githubUrl: "https://github.com/username/ecommerce",
     },
     {
-      title: "Database from scratch",
+      title: "Gestion de Stock",
+      description:
+          "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+      image: "/placeholder.svg",
+      technologies: ["React","Material UI" ,"TypeScript", "Spring Boot 3.2.1", "Python","Sckit-learn","Panda", "PostgreSQL"],
+      githubUrl: "https://github.com/ovoc01/gestion_stock"
+    },
+    {
+      title: "My Portfolio",
       description:
         "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
       image: "/placeholder.svg",
-      technologies: ["Java"],
+      technologies: ["NextJS 15","ShadcnUi","Tailwind css"],
+      githubUrl: "https://github.com/ovoc01/main-portfolio"
     },
     {
       title: "Anemoi",
       description:
         "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
       image: "/placeholder.svg",
-      technologies: ["React", "Socket.io", "WebRTC", "Node.js", "Redis"],
-      liveUrl: "https://chatapp-demo.com",
-      githubUrl: "https://github.com/username/chat-app",
+      technologies: ["Java", "Bash"],
+      githubUrl: "https://github.com/ovoc01/Anemoi-project",
     },
     {
       title: "Scaffold",
       description:
         "An AI image generator that uses a model to generate images based on a prompt.",
       image: "/placeholder.svg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
-    },
-    {
-      title: "Car selling online",
-      description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
-      image: "/placeholder.svg",
-      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
-      liveUrl: "https://ai-image-generator.com",
-      githubUrl: "https://github.com/username/ai-image-generator",
+      technologies: ["Java"],
+      githubUrl: "https://github.com/ovoc01/scaf-v2.git",
     },
   ];
 
