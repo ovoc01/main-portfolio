@@ -5,6 +5,7 @@ import { Download } from "lucide-react";
 import Image from "next/image";
 import { HTMLAttributes } from "react";
 import { GithubLogo } from "./icons";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -23,18 +24,18 @@ const About = () => {
               Passionate about creating impactful web experiences
             </h2>
             <p className="text-muted-foreground mb-6 text-justify">
-              With over 5 years of experience in full-stack development, I
-              specialize in building scalable web applications using modern
-              technologies. My expertise includes React, Node.js, and cloud
-              architecture. I&apos;m passionate about creating elegant solutions
-              to complex problems and sharing knowledge with the developer
-              community.
+              Passionate software engineer specializing in full-stack development, machine learning, and AI.
+              With expertise in modern web technologies and scalable architectures,
+              I build intelligent solutions that bridge software engineering and data science. Always eager to learn and innovate.
             </p>
             <div className="flex flex-wrap gap-4 justify-start">
-              <Button className="rounded-full">
-                <GithubLogo />
-                View Github
-              </Button>
+              <Link href="https://github.com/ovoc01">
+                <Button className="rounded-full">
+                  <GithubLogo />
+                  View Github
+                </Button>
+              </Link>
+
               <Button variant="outline" className="rounded-full">
                 <Download />
                 Download CV

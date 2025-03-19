@@ -80,30 +80,30 @@ const Projects = () => {
     {
       title: "DbMind",
       description:
-        "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+          "An intelligent search engine that translates natural language queries into SQL. Supports complex queries like filtering, aggregations, and date-based conditions.",
       image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Python", "spaCy","Panda", "PostgreSQL"],
+      technologies: ["Next.js", "TypeScript", "Python", "spaCy", "Pandas", "PostgreSQL"],
     },
     {
       title: "Gestion de Stock",
       description:
-          "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
+          "A full-featured stock management system with authentication, inventory tracking, reporting, and predictive stock analysis using machine learning.",
       image: "/placeholder.svg",
-      technologies: ["React","Material UI" ,"TypeScript", "Spring Boot 3.2.1", "Python","Sckit-learn","Panda", "PostgreSQL"],
-      githubUrl: "https://github.com/ovoc01/gestion_stock"
+      technologies: ["React", "Material UI", "TypeScript", "Spring Boot 3.2.1", "Python", "Scikit-learn", "Pandas", "PostgreSQL"],
+      githubUrl: "https://github.com/ovoc01/gestion_stock",
     },
     {
       title: "My Portfolio",
       description:
-        "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
+          "A personal portfolio showcasing projects, skills, and experience, built with a modern UI and responsive design.",
       image: "/placeholder.svg",
-      technologies: ["NextJS 15","ShadcnUi","Tailwind css"],
-      githubUrl: "https://github.com/ovoc01/main-portfolio"
+      technologies: ["NextJS 15", "Shadcn UI", "Tailwind CSS"],
+      githubUrl: "https://github.com/ovoc01/main-portfolio",
     },
     {
       title: "Anemoi",
       description:
-        "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
+          "A fully functional web framework built from scratch to understand key concepts behind Spring (DI, ORM, MVC). It provides a working dependency injection system, a lightweight ORM, and a routing mechanism.",
       image: "/placeholder.svg",
       technologies: ["Java", "Bash"],
       githubUrl: "https://github.com/ovoc01/Anemoi-project",
@@ -111,12 +111,13 @@ const Projects = () => {
     {
       title: "Scaffold",
       description:
-        "An AI image generator that uses a model to generate images based on a prompt.",
+          "A code generator that creates boilerplate CRUD applications from an existing database schema. Supports PostgreSQL, MySQL, and SQLite. Generates backends for Spring Boot (JPA), Django, and Laravel, as well as frontends for React.js, Angular, and Vue.js.",
       image: "/placeholder.svg",
       technologies: ["Java"],
       githubUrl: "https://github.com/ovoc01/scaf-v2.git",
     },
   ];
+
 
   return (
     <section id="projects" className="relative py-20 px-6">

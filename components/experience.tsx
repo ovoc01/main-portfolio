@@ -54,31 +54,40 @@ const ExperienceItem = ({
 const Experience = () => {
   const experiences = [
     {
-      title: "Full Stack Developer",
+      title: "Full Stack Developer | AI Engineer",
       company: "Self Employed",
       period: "Jan 2025 - Present",
       description:
-        "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-      technologies: ["React", "Node.js","Shadcn","Tailwind", "TypeScript", "Python","FastAPI", "MongoDB","PostgreSQL","React native"],
+          "Building intelligent and scalable web applications by integrating modern AI and machine learning solutions. Specializing in full-stack development, API design, and data-driven applications.",
+      technologies: [
+        "React", "Node.js", "Shadcn", "Tailwind", "TypeScript",
+        "Python", "FastAPI", "MongoDB", "PostgreSQL", "React Native"
+      ],
     },
     {
       title: "Full Stack Developer (Internship)",
       company: "Colas Madagascar",
       period: "Aug 2024 - Nov 2024",
       description:
-        "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-      technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
+          "Designed and developed a full-stack stock management system with microservices architecture. Implemented authentication, user management, and a predictive analytics module for stock forecasting.",
+      technologies: [
+        "React", "Spring Boot", "PostgreSQL (PostGIS)", "Docker",
+        "Redis", "Machine Learning (ARIMA)", "Flask"
+      ],
     },
-
     {
-      title: "Full Stack Developer ",
+      title: "Full Stack Developer (Student Projects)",
       company: "IT University",
       period: "2021 - 2024",
       description:
-        "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
-      technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
+          "Worked on multiple academic projects, gaining hands-on experience in full-stack development, cloud computing, and AI-driven applications. Developed scalable applications, optimized database performance, and implemented advanced algorithms.",
+      technologies: [
+        "React", "NestJS", "PostgreSQL", "Docker", "Redis",
+        "Machine Learning", "Cloud Computing"
+      ],
     },
   ];
+
 
   return (
     <section id="experience" className="relative py-20 px-6">
