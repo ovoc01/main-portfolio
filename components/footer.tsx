@@ -8,6 +8,10 @@ const footerLinks = [
     href: "#about",
   },
   {
+    title: "Education",
+    href: "#education",
+  },
+  {
     title: "Experience",
     href: "#experience",
   },
@@ -58,7 +62,7 @@ const Footer = () => {
         <div className="py-6 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
           {/* Copyright */}
           <span className="text-muted-foreground">
-            &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+            &copy; {new Date().getFullYear()} rzmirindra. All rights reserved.
           </span>
 
           <div className="flex items-center gap-5 text-muted-foreground">
@@ -68,12 +72,7 @@ const Footer = () => {
             <Link href="#" target="_blank">
               <XLogo className="h-5 w-5" />
             </Link>
-            <Link href="#" target="_blank">
-              <BlueSkyLogo className="h-5 w-5" />
-            </Link>
-            <Link href="#" target="_blank">
-              <DribbleLogo className="h-5 w-5" />
-            </Link>
+            
           </div>
         </div>
       </div>

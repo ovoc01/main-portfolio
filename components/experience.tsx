@@ -54,28 +54,29 @@ const ExperienceItem = ({
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "TechCorp Solutions",
-      period: "2021 - Present",
+      title: "Full Stack Developer",
+      company: "Self Employed",
+      period: "Jan 2025 - Present",
       description:
         "Led the development of enterprise-scale web applications, mentored junior developers, and implemented best practices for code quality and performance optimization.",
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "MongoDB"],
+      technologies: ["React", "Node.js","Shadcn","Tailwind", "TypeScript", "Python","FastAPI", "MongoDB","PostgreSQL","React native"],
     },
     {
-      title: "Full Stack Developer",
-      company: "Digital Innovations Inc",
-      period: "2019 - 2021",
+      title: "Full Stack Developer (Internship)",
+      company: "Colas Madagascar",
+      period: "Aug 2024 - Nov 2024",
       description:
         "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
       technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
     },
+
     {
-      title: "Frontend Developer",
-      company: "WebTech Studios",
-      period: "2018 - 2019",
+      title: "Full Stack Developer ",
+      company: "IT University",
+      period: "2021 - 2024",
       description:
-        "Created responsive and interactive user interfaces, collaborated with designers, and optimized application performance.",
-      technologies: ["React", "JavaScript", "SASS", "Webpack", "Jest"],
+        "Developed and maintained multiple client projects, implemented responsive designs, and integrated third-party APIs for enhanced functionality.",
+      technologies: ["React", "Express.js", "PostgreSQL", "Docker", "Redis"],
     },
   ];
 

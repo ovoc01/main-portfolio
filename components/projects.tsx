@@ -78,25 +78,23 @@ const ProjectCard = ({
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "DbMind",
       description:
         "A full-featured e-commerce platform with real-time inventory management, payment processing, and admin dashboard.",
       image: "/placeholder.svg",
-      technologies: ["Next.js", "TypeScript", "Stripe", "Prisma", "PostgreSQL"],
+      technologies: ["Next.js", "TypeScript", "Python", "spaCy","Panda", "PostgreSQL"],
       liveUrl: "https://ecommerce-demo.com",
       githubUrl: "https://github.com/username/ecommerce",
     },
     {
-      title: "AI Task Manager",
+      title: "Database from scratch",
       description:
         "Smart task management app that uses AI to categorize, prioritize, and suggest optimal task scheduling.",
       image: "/placeholder.svg",
-      technologies: ["React", "Python", "TensorFlow", "FastAPI", "MongoDB"],
-      liveUrl: "https://ai-taskmanager.com",
-      githubUrl: "https://github.com/username/ai-taskmanager",
+      technologies: ["Java"],
     },
     {
-      title: "Real-time Chat Application",
+      title: "Anemoi",
       description:
         "Feature-rich chat application with real-time messaging, file sharing, and video calls.",
       image: "/placeholder.svg",
@@ -105,7 +103,16 @@ const Projects = () => {
       githubUrl: "https://github.com/username/chat-app",
     },
     {
-      title: "AI Image Generator",
+      title: "Scaffold",
+      description:
+        "An AI image generator that uses a model to generate images based on a prompt.",
+      image: "/placeholder.svg",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Shadcn UI"],
+      liveUrl: "https://ai-image-generator.com",
+      githubUrl: "https://github.com/username/ai-image-generator",
+    },
+    {
+      title: "Car selling online",
       description:
         "An AI image generator that uses a model to generate images based on a prompt.",
       image: "/placeholder.svg",

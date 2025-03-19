@@ -19,13 +19,13 @@ const Hero = () => {
       <div className="relative z-[1] text-center max-w-screen-md">
         <Badge className="rounded-full border-none">
           <Zap className="fill-current" />
-          Fullstack Web Developer
+          Fullstack Developer
         </Badge>
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl font-bold !leading-[1.2] tracking-tight">
           Building Scalable & Engaging Web Experiences
         </h1>
         <p className="mt-6 text-[17px] md:text-lg">
-          Hey there! I&apos;m a John Doe, a Full Stack Developer who loves
+          Hey there! I&apos;m a Mirindra Zo RAZAFINDRASOAVA, a Full Stack Developer who loves
           building cool and scalable web experiences. From crafting beautiful
           frontends to powering robust backends, I bring ideas to life with
           clean code and great design. Let&apos;s create something amazing
