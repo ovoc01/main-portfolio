@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { Building2, Calendar,University } from "lucide-react";
+import {  Calendar,University } from "lucide-react";
 
 interface EducationItemProps {
     title: string;
@@ -89,7 +89,7 @@ const Education = () => {
 
                 <div className="relative">
                     {Educations.map((Education, index) => (
-                        <EducationItem key={index} {...Education} />
+                        <EducationItem  {...Education} />
                     ))}
                 </div>
             </div>
