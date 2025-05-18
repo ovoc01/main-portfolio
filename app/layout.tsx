@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "rzmirindra",
   description:
     "A beautiful portfolio template built with Shadcn UI, Tailwind CSS 4, and Next.js 15",
+  icons:{
+    icon:"./logo.png",
+  }
 };
 
 export default function RootLayout({

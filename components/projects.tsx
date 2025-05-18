@@ -30,6 +30,7 @@ const ProjectCard = ({
           alt={title}
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           fill
+          loading={'lazy'}
         />
       </div>
 
@@ -81,7 +82,7 @@ const Projects = () => {
       title: "DbMind",
       description:
           "An intelligent search engine that translates natural language queries into SQL. Supports complex queries like filtering, aggregations, and date-based conditions.",
-      image: "/placeholder.svg",
+      image: "https://images.unsplash.com/photo-1617791160536-598cf32026fb?q=80&w=3164&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       technologies: ["Next.js", "TypeScript", "Python", "spaCy", "Pandas", "PostgreSQL"],
     },
     {
