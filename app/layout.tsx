@@ -10,9 +10,12 @@ export const metadata: Metadata = {
   title: "Portfolio - rzmirindra",
   description:
     "A beautiful portfolio template built with Shadcn UI, Tailwind CSS 4, and Next.js 15",
-  icons:{
-    icon:"/logo.png",
-  }
+  icons: [
+    {
+      rel: "icon",
+      url: "/svgviewer-output.svg",
+    },
+  ]
 };
 
 export default function RootLayout({
@@ -22,12 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} antialiased
+      <body
+        className={`${geistSans.className} antialiased
         bg-black
-      `}>
-
+      `}
+      >
         <main>{children}</main>
-
       </body>
     </html>
   );
