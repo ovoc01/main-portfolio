@@ -14,68 +14,92 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({
-  title,
-  description,
-  image,
-  technologies,
-  liveUrl,
-  githubUrl,
-}: ProjectCardProps) => {
+                       title,
+                       description,
+                       image,
+                       technologies,
+                       liveUrl,
+                       githubUrl,
+                     }: ProjectCardProps) => {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-xl border border-accent transition-all hover:border-primary/50">
-      {/* Project Image */}
-      <div className="relative h-64 overflow-hidden bg-accent">
-        <Image
-          src={image}
-          alt={title}
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
-          fill
-          loading={'lazy'}
-        />
-      </div>
-
-      {/* Content */}
-      <div className="flex-1 flex flex-col p-6">
-        <h3 className="text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-muted-foreground mb-4">{description}</p>
-
-        {/* Technologies */}
-        <div className="flex flex-wrap gap-2 mb-6">
-          {technologies.map((tech) => (
-            <Badge key={tech} variant="secondary" className="rounded-full">
-              {tech}
-            </Badge>
-          ))}
+      <div className="
+      group relative flex flex-col overflow-hidden rounded-xl
+      border border-slate-700 hover:border-orange-500/70  // Softer orange hover border
+      bg-slate-800/40 backdrop-blur-sm                  // Slightly more opaque card bg
+      transition-all duration-300 ease-in-out
+    ">
+        {/* Project Image */}
+        <div className="relative h-56 sm:h-64 overflow-hidden bg-slate-700/50">
+          <Image
+              src={image} // Fallback placeholder
+              alt={title || "Project image"}
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              loading={'lazy'}
+          />
         </div>
 
-        {/* Actions */}
-        <div className="flex gap-3 mt-auto">
-          {liveUrl && (
-            <Button variant="default" className="rounded-full" asChild>
-              <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-1 h-4 w-4" />
-                Live Demo
-              </a>
-            </Button>
-          )}
-          {githubUrl && (
-            <Button
-              variant="outline"
-              className="rounded-full shadow-none"
-              asChild
-            >
-              <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                <GithubLogo className="mr-1 h-4 w-4" />
-                View Code
-              </a>
-            </Button>
-          )}
+        {/* Content */}
+        <div className="flex-1 flex flex-col p-5 sm:p-6">
+          {/* Title: Bright white */}
+          <h3 className="text-xl font-semibold mb-2 text-neutral-100">{title}</h3>
+          {/* Description: Lighter gray */}
+          <p className="text-sm text-neutral-400 mb-4 flex-grow">{description}</p>
+
+          {/* Technologies */}
+          <div className="flex flex-wrap gap-2 mb-6">
+            {technologies.map((tech) => (
+                <Badge
+                    key={tech}
+                    // Custom badge style for softer orange theme
+                    className="
+                                rounded-full bg-orange-400/30   // Light orange bg, darker orange text
+                                border border-orange-500/40                    // Subtle orange border
+                                px-2.5 py-0.5 text-xs font-medium              // Adjusted padding and font weight
+                            "
+                >
+                  {tech}
+                </Badge>
+            ))}
+          </div>
+
+          {/* Actions */}
+          <div className="flex flex-col sm:flex-row gap-3 mt-auto">
+            {liveUrl && (
+                <Button
+                    className="
+                rounded-full w-full sm:w-auto text-sm font-medium
+                bg-orange-500 hover:bg-orange-600 text-white          // Primary orange button
+                shadow-md shadow-orange-600/30 hover:shadow-orange-700/40
+                focus-visible:ring-orange-500
+                transition-all duration-200 ease-in-out
+              "
+                    asChild
+                >
+                  <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                    <ExternalLink className="mr-1.5 h-4 w-4" />
+                    Live Demo
+                  </a>
+                </Button>
+            )}
+            {githubUrl && (
+                <Button
+                     // Base structure
+                    asChild
+                    className={'hover:shadow-md hover:shadow-orange-700/70 rounded-xl'}
+                >
+                  <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center">
+                    <GithubLogo className="mr-1.5 h-4 w-4" /> {/* Ensure GithubLogo inherits text-orange-300 */}
+                    View Code
+                  </a>
+                </Button>
+            )}
+          </div>
         </div>
       </div>
-    </div>
   );
 };
-
 const Projects = () => {
   const projects = [
     {
@@ -124,7 +148,13 @@ const Projects = () => {
     <section id="projects" className="relative py-20 px-6">
       <div className="max-w-screen-md mx-auto">
         <div className="text-center mb-12">
-          <Badge variant="secondary" className="mb-4">
+          <Badge
+              variant="outline" // Base structure, specific styles override
+              className="
+                mb-4 bg-orange-400/20 text-white border-orange-500/60  // Softer orange badge
+                px-4 py-1.5 font-medium
+              "
+          >
             Projects
           </Badge>
           <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">

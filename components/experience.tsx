@@ -10,44 +10,66 @@ interface ExperienceItemProps {
 }
 
 const ExperienceItem = ({
-  title,
-  company,
-  period,
-  description,
-  technologies,
-}: ExperienceItemProps) => {
+                          title,
+                          company,
+                          period,
+                          description,
+                          technologies,
+                        }: ExperienceItemProps) => {
   return (
-    <div className="relative pl-8 not-last:pb-12">
-      {/* Timeline line */}
-      <div className="absolute left-0 top-2.5 h-full w-[2px] bg-muted group-first:h-[calc(100%-24px)] group-first:top-6">
-        <div className="absolute h-3 w-3 -left-[5px] top-0 rounded-full border-2 border-primary bg-background" />
-      </div>
+      <div className="relative pl-8 not-last:pb-12 group">
+        {/* Timeline line: Softer, desaturated orange or a dark neutral */}
+        <div className="absolute left-0 top-2.5 h-full w-[2px] bg-orange-600/40 group-first:h-[calc(100%-24px)] group-first:top-6">
+          {/*
+            Dot:
+            - Border: Mid-tone orange
+            - Background: Dark, blending with overall page background
+        */}
+          <div className="absolute h-3 w-3 -left-[5px] top-0 rounded-full border-2 border-orange-500 bg-slate-800" />
+        </div>
 
-      {/* Content */}
-      <div className="space-y-3">
-        <div className="flex items-center gap-3">
-          <div className="flex-shrink-0 size-9 bg-accent rounded-full flex items-center justify-center">
-            <Building2 className="size-5 text-muted-foreground" />
+        {/* Content */}
+        <div className="space-y-3">
+          <div className="flex items-center gap-3">
+            {/*
+              Icon Holder:
+              - Background: Very subtle, light orange tint
+          */}
+            <div className="flex-shrink-0 size-9 bg-orange-400/20 rounded-full flex items-center justify-center">
+              {/* Icon: Mid-tone orange for visibility */}
+              <Building2 className="size-5 text-orange-400" />
+            </div>
+            {/* Company text: Bright off-white */}
+            <span className="text-lg font-semibold text-neutral-100">{company}</span>
           </div>
-          <span className="text-lg font-semibold">{company}</span>
-        </div>
-        <div>
-          <h3 className="text-xl font-medium">{title}</h3>
-          <div className="flex items-center gap-2 mt-1 text-sm">
-            <Calendar className="size-4" />
-            <span>{period}</span>
+          <div>
+            {/* Title text: Brightest white for emphasis */}
+            <h3 className="text-xl font-medium text-white">{title}</h3>
+            {/* Period text: Light gray */}
+            <div className="flex items-center gap-2 mt-1 text-sm text-neutral-300">
+              <Calendar className="size-4" />
+              <span>{period}</span>
+            </div>
           </div>
-        </div>
-        <p className="text-muted-foreground">{description}</p>
-        <div className="flex flex-wrap gap-2">
-          {technologies.map((tech) => (
-            <Badge key={tech} variant="secondary" className="rounded-full">
-              {tech}
-            </Badge>
-          ))}
+          {/* Description text: Softer light gray */}
+          <p className="text-neutral-400">{description}</p>
+          <div className="flex flex-wrap gap-2">
+            {technologies.map((tech) => (
+                <Badge
+                    key={tech}
+                    // Custom badge style for softer orange theme
+                    className="
+                                rounwded-full bg-orange-400/30   // Light orange bg, darker orange text
+                                border border-orange-500/40                    // Subtle orange border
+                                px-2.5 py-0.5 text-xs font-medium              // Adjusted padding and font weight
+                            "
+                >
+                  {tech}
+                </Badge>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 
@@ -90,27 +112,36 @@ const Experience = () => {
 
 
   return (
-    <section id="experience" className="relative py-20 px-6">
-      <div className="max-w-screen-md mx-auto">
-        <div className="text-center mb-12">
-          <Badge variant="secondary" className="mb-4">
-            Experience
-          </Badge>
-          <h2 className="text-4xl sm:text-5xl font-bold tracking-tight">
-            Professional Journey
-          </h2>
-          <p className="text-muted-foreground mt-2 sm:mt-4 text-lg">
-            A timeline of my professional growth and key achievements
-          </p>
-        </div>
+      <section id="experience" className="relative py-20 px-6">
+        <div className="max-w-screen-md mx-auto">
+          <div className="text-center mb-12">
+            {/* Section Badge: Styled for dark theme */}
+            <Badge
+                variant="outline" // Base structure, specific styles override
+                className="
+                mb-4 bg-orange-400/20 text-white border-orange-500/60  // Softer orange badge
+                px-4 py-1.5 font-medium
+              "
+            >
+              Experience
+            </Badge>
+            {/* Section Title: Bright white */}
+            <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-white">
+              Professional Journey
+            </h2>
+            {/* Section Subtitle: Lighter gray */}
+            <p className="text-neutral-400 mt-2 sm:mt-4 text-lg">
+              A timeline of my professional growth and key achievements
+            </p>
+          </div>
 
-        <div className="relative">
-          {experiences.map((experience, index) => (
-            <ExperienceItem key={index} {...experience} />
-          ))}
+          <div className="relative">
+            {experiences.map((experience, index) => (
+                <ExperienceItem key={index} {...experience} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
   );
 };
 

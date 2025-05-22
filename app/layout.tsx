@@ -8,25 +8,27 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 export const metadata: Metadata = {
-  title: "rzmirindra",
+  title: "Portfolio - rzmirindra",
   description:
     "A beautiful portfolio template built with Shadcn UI, Tailwind CSS 4, and Next.js 15",
   icons:{
-    icon:"./logo.png",
+    icon:"/logo.png",
   }
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.className} antialiased`}>
-        <Navbar />
+      <body className={`${geistSans.className} antialiased
+        bg-transparent
+      `}>
+
         <main>{children}</main>
-        <Footer />
+
       </body>
     </html>
   );
