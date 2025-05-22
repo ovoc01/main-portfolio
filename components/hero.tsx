@@ -23,7 +23,7 @@ const Hero = () => {
               className="
             rounded-full border-none
             bg-orange-500/80 hover:bg-orange-500 text-orange-100  // Changed from purple to orange
-            px-4 py-1.5 text-sm shadow-md shadow-orange-600/30   // Orange shadow
+            px-4 py-1.5 text-sm shadow-md shadow-orange-600/30   
           "
           >
             {/* Zap Icon: Light orange/amber fill */}
@@ -38,10 +38,10 @@ const Hero = () => {
 
           {/* Paragraph: Light gray (can remain neutral) */}
           <p className="mt-6 text-base md:text-lg text-neutral-300 max-w-xl mx-auto">
-            Hey there! I'm Mirindra Zo RAZAFINDRASOAVA, a Full Stack Developer who loves
+            Hey there! I&lsquo;m Mirindra Zo RAZAFINDRASOAVA, a Full Stack Developer who loves
             building cool and scalable web experiences. From crafting beautiful
             frontends to powering robust backends, I bring ideas to life with
-            clean code and great design. Let's create something amazing
+            clean code and great design. Let&lsquo;s create something amazing
             together! 🚀
           </p>
 
@@ -52,7 +52,7 @@ const Hero = () => {
                   className="
                 rounded-full text-base font-semibold
                 bg-orange-500 hover:bg-orange-600 text-white         // Changed from purple to orange
-                shadow-lg shadow-orange-600/40 hover:shadow-orange-700/50 // Orange shadow
+                shadow-lg shadow-orange-600/40 hover:shadow-orange-700/50 
                 focus-visible:ring-orange-400 transition-all duration-200 ease-in-out
                 transform hover:scale-105
               "
