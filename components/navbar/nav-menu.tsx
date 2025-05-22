@@ -37,12 +37,12 @@ export const NavMenu = ({ className, ...props }: NavigationMenuProps) => (
                         "group inline-flex h-10 w-max items-center justify-center rounded-md px-3 py-2 text-sm font-medium transition-colors",
                         "bg-transparent", // Ensure transparent background by default
                         "text-neutral-300", // Default text color: light gray
-                        "hover:bg-purple-500/15", // Hover background: very subtle semi-transparent purple
-                        "hover:text-purple-200",  // Hover text color: light purple
-                        "focus:bg-purple-500/20", // Focus background
-                        "focus:text-purple-100",  // Focus text color
+                        "hover:bg-orange-500/15", // Hover background: very subtle semi-transparent purple
+                        "hover:text-orange-200",  // Hover text color: light purple
+                        "focus:bg-orange-500/20", // Focus background
+                        "focus:text-orange-100",  // Focus text color
                         "focus:outline-none disabled:pointer-events-none disabled:opacity-50",
-                        "data-[active]:bg-purple-600/20 data-[active]:text-purple-100" // Active link styling (if supported/needed)
+                        "data-[active]:bg-orange-600/20 data-[active]:text-orange-100" // Active link styling (if supported/needed)
                     )}
                 >
                   {item.label}

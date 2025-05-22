@@ -11,8 +11,7 @@ const Navbar = () => {
             className="
                 fixed z-50 top-4 sm:top-6 inset-x-4 h-12
                 max-w-screen-md mx-auto rounded-full
-                overflow-hidden // <<< ADD THIS! Crucial for containing backdrop-filter effects with rounded corners
-                border border-slate-700/80
+                overflow-hidden 
                 backdrop-blur-md bg-slate-900/70
                 shadow-lg shadow-black/20
             "
