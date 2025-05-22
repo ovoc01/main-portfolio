@@ -12,6 +12,7 @@ const Navbar = () => {
                 fixed z-50 top-4 sm:top-6 inset-x-4 h-12
                 max-w-screen-md mx-auto rounded-full
                 overflow-hidden 
+                border border-slate-700/80
                 backdrop-blur-md bg-slate-900/70
                 shadow-lg shadow-black/20
             "

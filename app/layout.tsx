@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.className} antialiased
-        bg-transparent
+        bg-black
       `}>
 
         <main>{children}</main>
